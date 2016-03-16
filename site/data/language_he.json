@@ -1,3 +1,12 @@
 {
-    "site_title": "Dr.Hen"
+    "site_title": "Dr.Hen",
+    "phone": "09-8846222",
+    "phone_text": "התקשרו: 09-8846222",
+    "menu_home": "דף בית",
+    "menu_about": "אודות",
+    "menu_treatments": "טיפולים",
+    "menu_instructions": "הנחיות לאחר טיפול",
+    "menu_medical_form": "טופס הפנייה",
+    "menu_contact": "יצירת קשר",
+    "address": "שעות פתיחה: ימים א',ב',ד',ה' 09:00-17:00 </br> רחוב דיזינגוף 15, כניסה ב', קומה ב', נתניה"
 }
