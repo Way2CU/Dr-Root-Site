@@ -6,12 +6,17 @@
  * Authors:Tal Reznic
  */
 
+section#introduction,
 section#features,
 section#slider {
 	display: block;
 	text-align: left;
 	padding: 0px calc(~'(100% - 1200px)' / 2);
 	position: relative;
+}
+
+section#introduction {
+	text-align: right;
 }
 
 section#features {
@@ -46,7 +51,7 @@ section#slider div.form_wrap {
 	text-align: center;
 	background-color: @color_ac_asphalt;
 	color: @color_ac_white;
-	width: 350px;
+	width: 300px;
 }
 
 section#slider div.form_wrap p {
@@ -107,8 +112,8 @@ section#slider div.form_wrap label input {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 	padding-right: 5px;
 	border: 1px solid @color_ac_asphalt;
 	background-color: fade(@color_ac_white,50%);
@@ -133,8 +138,8 @@ section#slider div.form_wrap div.controls {
 
 section#slider div.form_wrap div.controls button {
 	display: inline-block;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 	padding-left: 70px;
 	padding-right: 70px;
 	border: none;
@@ -165,8 +170,8 @@ section#features ul li {
 }
 
 section#features ul li:hover:before {
-	border: 2px solid @color_ac_turquise;
-	background-color: @color_ac_grey;
+	border: 3px solid @color_ac_turquise;
+	background-color: fade(@color_ac_grey, 60%);
 }
 
 section#features ul li:before {
@@ -179,7 +184,7 @@ section#features ul li:before {
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 	background-size: 600px 150px;
-	border: 2px solid transparent;
+	border: 3px solid transparent;
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
@@ -204,4 +209,20 @@ section#features ul li p {
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
+}
+
+section#introduction img,
+section#introduction article {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+section#introduction article {
+	width: calc(~'(100% - 528px)');
+	padding-left: 150px;
+	padding-right: 50px;
+}
+
+section#introduction article h2 {
+	font-weight: 300;
 }

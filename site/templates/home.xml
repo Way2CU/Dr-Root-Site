@@ -29,6 +29,19 @@
 				</div>
 			</section>
 
+			<section id="introduction">
+				<img src="_BASEURL.'/site/images/hen.jpg'"  alt="hen_segal" cms:eval="src"/>
+
+				<article>
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="introduction_article"
+						template="parts/article.xml"
+						/>
+				</article>	
+			</section>
+
 			<section id="features">
 				<ul>
 					<cms:module
