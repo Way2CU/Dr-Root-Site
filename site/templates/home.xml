@@ -12,6 +12,23 @@
 			<!-- Top section of the site -->
 			<cms:template file="parts/header.xml"/>
 
+			<section id="slider">
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="home_page_slider"
+					template="parts/slider.xml"
+					/>
+				<div class="form_wrap">
+					<p><cms:text constant="title_form"/></p>
+					<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact"
+							/>
+				</div>
+			</section>
+
 			<!-- Bottom section of the site -->
 			<cms:template file="parts/footer.xml"/>
 		</body>
