@@ -3,7 +3,10 @@
 		<cms:svg file="site-sprite.svg"/>
 
 		<div class="top_header">
-			<p><cms:text constant="address"/></p>
+			<div class="information">
+				<p><cms:text constant="working_hours"/></p>
+				<p><cms:text constant="address"/></p>
+			</div>
 			<a href="url_Make('','home')" class="logo" cms:eval="href">
 				<img src="_BASEURL.'/site/images/logo.svg'"  alt="logo" cms:eval="src"/>
 			</a>
