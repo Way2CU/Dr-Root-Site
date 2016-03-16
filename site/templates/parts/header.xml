@@ -2,17 +2,25 @@
 	<header>
 		<cms:svg file="site-sprite.svg"/>
 
-		<p><cms:text constant="address"/></p>
-		<a href="url_Make('','home')" class="logo" cms:eval="href">
-			<img src="_BASEURL.'/site/images/logo.svg'"  alt="logo" cms:eval="src"/>
-		</a>
-		<a
-			href="'tel:'.urlencode(Language::getText('phone'))"
-			cms:eval="href"
-			class="phone"
-			>
-			<cms:text constant="phone_text"/>
-		</a>
+		<div class="top_header">
+			<p><cms:text constant="address"/></p>
+			<a href="url_Make('','home')" class="logo" cms:eval="href">
+				<img src="_BASEURL.'/site/images/logo.svg'"  alt="logo" cms:eval="src"/>
+			</a>
+			<a
+				href="'tel:'.urlencode(Language::getText('phone'))"
+				cms:eval="href"
+				class="phone"
+				>
+				<cms:text constant="phone_text"/>
+				<svg>
+					<use
+						href="#phone-call"
+						xlink:href="site/images/site-sprite.svg#phone-call"
+						/>
+				</svg>
+			</a>
+		</div>
 
 		<nav>
 			<a
