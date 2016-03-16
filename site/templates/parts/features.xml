@@ -1,0 +1,3 @@
+<document>
+	<li><cms:markdown param="content" multilanguage="yes"/></li>
+</document>
