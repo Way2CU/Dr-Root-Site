@@ -6,11 +6,20 @@
  * Authors:Tal Reznic
  */
 
+section#features,
 section#slider {
 	display: block;
 	text-align: left;
 	padding: 0px calc(~'(100% - 1200px)' / 2);
 	position: relative;
+}
+
+section#features {
+	text-align: center;
+	background-image: url(../images/crossword.png);
+	background-repeat: repeat;
+	background-position: center center;
+	background-size: 400px 400px;
 }
 
 section#slider figure {
@@ -138,4 +147,40 @@ section#slider div.form_wrap div.controls button {
 
 section#slider div.form_wrap div.controls button:hover {
 	background-color: @color_ac_turquise_dark;
+}
+
+section#features ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+section#features ul li {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 125px;
+	padding-bottom: 20px;
+	width: 25%;
+	position: relative;
+}
+
+section#features ul li:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -75px;
+	background-image: url(../images/features-icons-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 600px 150px;
+	width: 150px;
+	height: 150px;
+}
+
+section#features ul li p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
 }
