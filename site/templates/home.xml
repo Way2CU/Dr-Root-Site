@@ -11,6 +11,9 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<!-- Top section of the site -->
 			<cms:template file="parts/header.xml"/>
+
+			<!-- Bottom section of the site -->
+			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>
 </document>
