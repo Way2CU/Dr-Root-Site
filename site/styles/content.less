@@ -1,0 +1,141 @@
+/**
+ * Main Style Sheet
+ * Dr.hen segal Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+section#slider {
+	display: block;
+	text-align: left;
+	padding: 0px calc(~'(100vw - 1200px)' / 2);
+	position: relative;
+}
+
+section#slider figure {
+	display: block;
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+section#slider div.form_wrap {
+	display: block;
+	margin-right: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	background-color: @color_ac_asphalt;
+	color: @color_ac_white;
+	width: 350px;
+}
+
+section#slider div.form_wrap p {
+	margin: 0px;
+	padding-bottom: 15px;
+}
+
+section#slider div.form_wrap form{
+	display: block;
+}
+
+section#slider div.form_wrap label {
+	display: block;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+section#slider div.form_wrap label:before {
+	content: "";
+	position: absolute;
+	right: 15px;
+	top: -7px;
+	background-image: url(../images/icon-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 422px 32px;
+	width: 32px;
+	height: 32px;
+}
+
+section#slider div.form_wrap label:nth-of-type(1):before {
+	background-position: 0px 0px;
+}
+
+section#slider div.form_wrap label:nth-of-type(2):before {
+	background-position: -32px 0px;
+}
+
+section#slider div.form_wrap label:nth-of-type(3):before {
+	background-position: -62px 0px;
+}
+
+section#slider div.form_wrap label span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+section#slider div.form_wrap label span {
+	display: block;
+	padding-right: 50px;
+	padding-bottom: 5px;
+	text-align: right;
+}
+
+section#slider div.form_wrap label input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 5px;
+	border: 1px solid @color_ac_asphalt;
+	background-color: fade(@color_ac_white,50%);
+	width: calc(~'90% - 5px');
+	transition: all 0.3s;
+}
+
+section#slider div.form_wrap label input:hover {
+	background-color: fade(@color_ac_white,80%);
+}
+
+section#slider div.form_wrap label input:focus {
+	background-color: @color_ac_white;
+}
+
+section#slider div.form_wrap div.controls {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section#slider div.form_wrap div.controls button {
+	display: inline-block;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 70px;
+	padding-right: 70px;
+	border: none;
+	background-color: @color_ac_turquise;
+	border: 1px solid @color_ac_asphalt;
+	font-weight: 700;
+	color: @color_ac_white;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+section#slider div.form_wrap div.controls button:hover {
+	background-color: @color_ac_turquise_dark;
+}
