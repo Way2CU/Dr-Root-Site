@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title>
+				<cms:text constant="site_title"/>
+				<cms:raw text=" - "/>
+				<cms:text constant="menu_contact"/>
+			</title>
+			<cms:collection include="page_control"/>
+			<script src="https://maps.googleapis.com/maps/api/js?language=iw"></script>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+			<!-- Top section of the site -->
+			<cms:template file="parts/header.xml"/>
+
+			<section id="contact">
+				<div class="information">
+					<h2><cms:text constant="title_contact"/></h2>
+					<ul>
+						<li>
+							<svg>
+								<use
+									href="#time"
+									xlink:href="site/images/site-sprite.svg#time"
+									/>
+							</svg>
+							<cms:text constant="working_hours"/>
+						</li>
+
+						<li>
+							<svg>
+								<use
+									href="#location"
+									xlink:href="site/images/site-sprite.svg#location"
+									/>
+							</svg>
+							<cms:text constant="address"/>
+						</li>
+
+						<li>
+							<svg>
+								<use
+									href="#phone"
+									xlink:href="site/images/site-sprite.svg#phone"
+									/>
+							</svg>
+							<cms:text constant="phone_only_text"/>
+							<a
+								href="'tel:'.urlencode(Language::getText('phone'))"
+								cms:eval="href"
+								class="phone"
+								>
+								<cms:text constant="phone"/>
+							</a>
+							<a
+								href="'tel:'.urlencode(Language::getText('phone2'))"
+								cms:eval="href"
+								class="phone"
+								>
+								<cms:text constant="phone2"/>
+							</a>
+						</li>
+
+						<li>
+							<svg>
+								<use
+									href="#email"
+									xlink:href="site/images/site-sprite.svg#email"
+									/>
+							</svg>
+							<cms:text constant="mail_text"/>
+							<a
+								href="'mailto:'.urlencode(Language::getText('mail_address'))"
+								cms:eval="href"
+								class="phone"
+								>
+								<cms:text constant="mail_address"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="canvas"></div>
+			</section>
+
+			<div id="contact_form">
+				<p><cms:text constant="title_form"/></p>
+				<cms:module
+					name="contact_form"
+					action="show"
+					text_id="contact"
+					/>
+			</div>
+			<!-- Bottom section of the site -->
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>
