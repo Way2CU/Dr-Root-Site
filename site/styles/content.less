@@ -6,6 +6,7 @@
  * Authors:Tal Reznic
  */
 
+section#contact,
 section#instructions, 
 div#video_container, 
 section#testimonial,
@@ -17,15 +18,21 @@ section#slider {
 	padding: 0px calc(~'(100% - 1200px)' / 2);
 	position: relative;
 }
+
 section#instructions {
 	text-align: center;
 	padding: 20px calc(~'(100% - 1200px)' / 2);
 }
 
+section#contact,
 section#treatments,
 section#about,
 section#introduction {
 	text-align: right;
+}
+
+section#contact {
+	padding: 20px calc(~'(100% - 1200px)' / 2);
 }
 
 section#testimonial {
@@ -36,6 +43,7 @@ section#testimonial {
 	overflow: hidden;
 }
 
+div#contact_form,
 div#video_container,
 section#features {
 	padding: 20px calc(~'(100% - 1200px)' / 2);
@@ -434,4 +442,67 @@ section#instructions article ul li:last-of-type {
 
 section#instructions article ul li strong {
 	display: block;
+}
+
+section#contact div#canvas,
+section#contact div.information {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+section#contact div#canvas {
+	border: 2px solid @color_ac_grey;
+	width: calc(~'(50% - 4px)');
+	height: 300px;
+}
+
+section#contact div.information h2 {
+	color: @color_ac_blue_dark;
+}
+
+section#contact div.information ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+section#contact div.information ul li {
+	padding-bottom: 20px;
+}
+
+section#contact div.information ul li:last-of-type {
+	padding-bottom: 0px;
+}
+
+section#contact div.information ul li svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+section#contact div.information ul li strong {
+	display: inline-block;
+}
+
+section#contact div.information ul li a {
+	text-decoration: none;
+	color: @color_text;
+	transition: all 0.3s;
+}
+
+section#contact div.information ul li a:hover {
+	color: @color_ac_turquise;
+}
+
+section#contact div.information ul li a.phone {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+div#contact_form {
+	display: block;
+	text-align: center;
 }
