@@ -16,6 +16,7 @@ section#slider {
 	position: relative;
 }
 
+section#treatments,
 section#about,
 section#introduction {
 	text-align: right;
@@ -256,6 +257,7 @@ section#introduction article {
 
 section#introduction article h2 {
 	font-weight: 300;
+	color: @color_ac_blue_dark;
 }
 
 section#testimonial article {
@@ -281,16 +283,18 @@ section#testimonial article p {
 	font-style: italic;
 }
 
+section#treatments article,
 div.gallery_container,
 section#about article {
 	display: block;
+	padding: 0px calc(~'(100% - 1200px)' / 2);
 	padding-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0px calc(~'(100% - 1200px)' / 2);
 }
 
 div.gallery_container {
+	padding-top: 20px;
 	text-align: center;
 }
 
@@ -318,6 +322,8 @@ div.gallery_container a img {
 	transition: all 0.3s;
 }
 
+section#treatments > h2,
+section#treatments article h2,
 section#about article h2 {
 	text-align: center;
 	padding-bottom: 10px;
@@ -326,6 +332,20 @@ section#about article h2 {
 	border-bottom: 2px solid @color_ac_turquise;
 }
 
+section#treatments > h2,
+section#treatments > p {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+}
+
+section#treatments > p {
+	width: 600px;
+	font-size: 1.3em;
+}
+
+section#treatments article.sub h2,
 section#about article.sub h2 {
 	text-align: right;
 	border: none;
@@ -333,6 +353,7 @@ section#about article.sub h2 {
 	overflow: hidden;
 }
 
+section#treatments article.sub h2:after,
 section#about article.sub h2:after {
 	content: "";
 	position: absolute;
@@ -342,15 +363,17 @@ section#about article.sub h2:after {
 	border-bottom: 2px solid @color_ac_turquise;
 }
 
-section#about article p {
-	width: 100%;
+section#treatments article.sub h2:after {
+	width: 43%;
 }
 
+section#treatments article span,
 section#about article span {
 	display: block;
 	clear: both;
 }
 
+section#treatments article img,
 section#about article img {
 	float: left;
 	margin-right: 20px;
