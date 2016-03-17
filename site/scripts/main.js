@@ -52,6 +52,12 @@ Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
+	// function for home page slider
+	Site.slider = new PageControl('section#slider', 'figure');
+	Site.slider
+		.setInterval(6000)
+		.setWrapAround(true);
+
 	// create function for rotating between testimonials
 	Site.testimonials = new PageControl('section#testimonial', 'article');
 	Site.testimonials
