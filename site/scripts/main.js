@@ -51,6 +51,13 @@ Site.is_mobile = function() {
 Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
+
+	// create function for rotating between testimonials
+	Site.testimonials = new PageControl('section#testimonial', 'article');
+	Site.testimonials
+		.setInterval(8000)
+		.setWrapAround(true)
+		.setAutoResize(true);
 };
 
 
