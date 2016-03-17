@@ -39,7 +39,7 @@
 						text_id="introduction_article"
 						template="parts/article.xml"
 						/>
-				</article>	
+				</article>
 			</section>
 
 			<section id="features">
@@ -51,6 +51,15 @@
 						template="parts/features.xml"
 						/>
 				</ul>
+			</section>
+
+			<section id="testimonial">
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="testimonials"
+					template="parts/testimonial_article.xml"
+					/>
 			</section>
 
 			<!-- Bottom section of the site -->
