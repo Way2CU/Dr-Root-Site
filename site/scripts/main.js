@@ -58,6 +58,9 @@ Site.on_load = function() {
 		.setInterval(8000)
 		.setWrapAround(true)
 		.setAutoResize(true);
+
+	// create lightbox function for about us page gallery
+	Site.lightbox = new LightBox('div.gallery_container a', false, false, true);
 };
 
 
