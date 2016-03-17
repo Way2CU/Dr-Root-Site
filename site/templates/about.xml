@@ -40,7 +40,14 @@
 						group_text_id="videos"
 						template="parts/video_list.xml"
 						/>
-				</div>	
+				</div>
+
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="about_articles"
+					template="parts/group_article.xml"
+					/>
 			</section>
 
 			<!-- Bottom section of the site -->
