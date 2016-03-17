@@ -41,6 +41,7 @@ section#features {
 
 section#slider figure {
 	display: block;
+	text-align: right;
 	margin: 0px;
 	position: absolute;
 	top: 0px;
@@ -54,6 +55,20 @@ section#slider figure {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+}
+
+section#slider figure:before {
+	content: attr(data-description);
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+	left: 50%;
+	margin-left: -220px;
+	font-size: 2.5em;
+	width: 300px;
+	font-weight: 300;
+	color: @color_ac_blue_dark;
+
 }
 
 section#slider figure.visible {
