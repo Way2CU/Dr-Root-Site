@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title>
+				<cms:text constant="site_title"/>
+				<cms:raw text=" - "/>
+				<cms:text constant="menu_treatments"/>
+			</title>
+			<!-- Page description -->
+			<cms:module 
+				name="page_info" 
+				action="set_description" 
+				article="treatment_article"
+				/>
+			<cms:collection include="page_control,animation_chain"/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+			<!-- Top section of the site -->
+			<cms:template file="parts/header.xml"/>
+
+			<section id="treatments">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="treatment_article"
+					template="parts/article2.xml"
+					/>
+
+				<cms:module
+					name="articles"
+					action="show_group"
+					text_id="clinic_group"
+					template="parts/articles_group_information.xml"
+				/>
+			</section>
+			<!-- Bottom section of the site -->
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>
