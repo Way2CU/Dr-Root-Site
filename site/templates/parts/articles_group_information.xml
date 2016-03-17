@@ -1,0 +1,11 @@
+<document>
+	<h2><cms:var param="title" multilanguage="yes"/></h2>
+	<cms:markdown param="description" multilanguage="yes"/>
+	<cms:module
+		name="articles"
+		action="show_list"
+		group="$params['id']"
+		template="parts/group_article.xml"
+		cms:eval="group"
+		/>
+</document>
