@@ -67,6 +67,17 @@ Site.on_load = function() {
 
 	// create lightbox function for about us page gallery
 	Site.lightbox = new LightBox('div.gallery_container a', false, false, true);
+
+	// google maps
+	if ($('div#canvas').length) {
+	var mapOptions = {
+	  zoom: 17,
+	  center: new google.maps.LatLng(32.3307741,34.8549944), 
+	  mapTypeId: google.maps.MapTypeId.ROADMAP
+	}
+	var map = new google.maps.Map(document.getElementById('canvas'), mapOptions);
+	var myPos = new google.maps.LatLng(32.3307741,34.8549944); 
+	}
 };
 
 
