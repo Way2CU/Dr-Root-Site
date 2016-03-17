@@ -1,7 +1,11 @@
 {
     "site_title": "Dr.Hen",
     "phone": "09-8846222",
+    "phone2": "09-8846223",
     "phone_text": "התקשרו: 09-8846222",
+    "mail_text": "<strong>דוא''ל: </strong> ",
+    "mail_address": "drhensegal@gmail.com",
+    "phone_only_text":"<strong>טלפון:</strong> ",
     "menu_home": "דף בית",
     "menu_about": "אודות",
     "menu_treatments": "טיפולים",
@@ -9,8 +13,9 @@
     "menu_medical_form": "טופס הפנייה",
     "menu_contact": "יצירת קשר",
     "title_form": "רוצים לקבל שיחה חזרה? מלאו את הטופס",
-    "working_hours": "שעות פתיחה: ימים א',ב',ד',ה' 09:00-17:00",
-    "address": "רחוב דיזינגוף 15, כניסה ב', קומה ב', נתניה",
+    "title_contact": "יצירת קשר | ד\"ר חן סגל מומחה לטיפולי שורש",
+    "working_hours": "<strong>שעות פתיחה:</strong> ימים א',ב',ד',ה' 09:00-17:00",
+    "address": "<strong>כתובת:</strong> רחוב דיזינגוף 15, כניסה ב', קומה ב', נתניה",
     "copyright_holder": "Copyright &copy; 2015. by <a href=\"http://way2cu.com\" target=\"_blank\">Way2CU</a>.",
     "copyright_text": "All rights reserved."
 }
