@@ -5,6 +5,8 @@
  * Copyright (c) 2015. by Way2CU, http://way2cu.com
  * Authors:Tal Reznic
  */
+
+section#instructions, 
 div#video_container, 
 section#testimonial,
 section#introduction,
@@ -14,6 +16,10 @@ section#slider {
 	text-align: left;
 	padding: 0px calc(~'(100% - 1200px)' / 2);
 	position: relative;
+}
+section#instructions {
+	text-align: center;
+	padding: 20px calc(~'(100% - 1200px)' / 2);
 }
 
 section#treatments,
@@ -385,4 +391,47 @@ div#video_container div.video_wrap {
 	vertical-align: top;
 	margin-left: 25px;
 	margin-right: 25px;
+}
+
+section#instructions article {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 25px;
+	margin-right: 25px;
+	box-shadow: 0px 0px 5px fade(@color_ac_grey, 70%);
+	width: 500px;
+}
+
+section#instructions article h2 {
+	margin: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: @color_ac_blue_dark;
+	color: @color_ac_white;
+}
+
+section#instructions article p {
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 700;
+	color: @color_ac_blue_dark;
+	border-bottom: 1px solid @color_ac_turquise;
+	width: 85%;
+}
+
+section#instructions article ul {
+	text-align: right;
+	width: 80%;
+}
+
+section#instructions article ul li {
+	padding-bottom: 10px;
+}
+
+section#instructions article ul li:last-of-type {
+	padding-bottom: 0px;
+}
+
+section#instructions article ul li strong {
+	display: block;
 }
