@@ -6,6 +6,7 @@
  * Authors:Tal Reznic
  */
 
+section#medical,
 section#contact,
 section#instructions, 
 div#video_container, 
@@ -19,6 +20,7 @@ section#slider {
 	position: relative;
 }
 
+section#medical,
 section#instructions {
 	text-align: center;
 	padding: 20px calc(~'(100% - 1200px)' / 2);
@@ -608,5 +610,230 @@ div#contact_form form div.controls button {
 }
 
 div#contact_form form div.controls button:hover {
+	background-color: darken(@color_ac_turquise, 10%);
+}
+
+section#medical article,
+section#medical form {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+section#medical article {
+	text-align: right;
+}
+
+section#medical article h2 {
+	margin-top: 0px;
+	color: @color_ac_blue_dark;
+	font-weight: 300;
+}
+
+section#medical form {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: right;
+	background-color: lighten(@color_ac_grey, 20%);
+	box-shadow: 0px 0px 5px fade(@color_ac_grey, 80%);
+}
+
+section#medical form fieldset {
+	display: block;
+	margin: 0px;
+	margin-bottom: 15px;
+	padding: 0px;
+	border: none;
+}
+
+section#medical form span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 30px;
+	font-weight: 700;
+}
+
+section#medical form input[type="checkbox"] {
+	display: none;
+} 
+
+section#medical form input[type="text"] {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+section#medical form fieldset[name="name"] input {
+	padding-right: 5px;
+	width: calc(~'(70% - 5px)');
+}
+
+section#medical form fieldset[name="name"] span {
+	padding-left: 5px;
+}
+
+section#medical form fieldset[name="toothes"] {
+	text-align: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#medical form fieldset[name="toothes"] legend {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+	width: 80%;
+	font-weight: 700;
+}
+
+section#medical form fieldset[name="toothes"] label {
+	display: inline-block;
+}
+
+section#medical form fieldset[name="toothes"] label:nth-child(25),
+section#medical form fieldset[name="toothes"] label:nth-child(9) {
+	border-left: 1px solid @color_ac_turquise;
+}
+
+section#medical form fieldset[name="toothes"] label:nth-child(-n+17) {
+	padding-bottom: 7px;
+	border-bottom: 1px solid @color_ac_turquise;
+}
+
+section#medical form fieldset[name="toothes"] label:nth-child(n+18) {
+	padding-top: 7px;
+}
+
+section#medical form fieldset[name="toothes"] span {
+	padding-left: 7px;
+	padding-right: 7px;
+	width: auto;
+	font-weight: 400;
+	position: relative;
+}
+
+section#medical form fieldset[name="toothes"] input:checked ~span:before {
+	opacity: 1;
+}
+
+section#medical form fieldset[name="toothes"] span:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -13.5px;
+	left: 50%;
+	margin-left: -13.5px;
+	width: 25px;
+	height: 25px;
+	border: 1px solid @color_ac_blue_dark;
+	border-radius: 50%;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+section#medical form fieldset[name="name"],
+section#medical form fieldset[name="root_canal"],
+section#medical form fieldset[name="renewal_root"],
+section#medical form fieldset[name="surgical_root"],
+section#medical form fieldset[name="trauma_treatment"],
+section#medical form fieldset[name="white_treatment"] {
+	text-align: right;
+}
+
+section#medical form fieldset[name="root_canal"] span,
+section#medical form fieldset[name="renewal_root"] span,
+section#medical form fieldset[name="surgical_root"] span,
+section#medical form fieldset[name="trauma_treatment"] span,
+section#medical form fieldset[name="white_treatment"]  span{
+	font-weight: 700;
+	padding-right: 30px;
+	width: calc(~'(300px - 30px)');
+	position: relative;
+}
+
+section#medical form fieldset[name="root_canal"] span:before,
+section#medical form fieldset[name="renewal_root"] span:before,
+section#medical form fieldset[name="surgical_root"] span:before,
+section#medical form fieldset[name="trauma_treatment"] span:before,
+section#medical form fieldset[name="white_treatment"]  span:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 1px solid @color_ac_grey;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+section#medical form fieldset[name="root_canal"] span:after,
+section#medical form fieldset[name="renewal_root"] span:after,
+section#medical form fieldset[name="surgical_root"] span:after,
+section#medical form fieldset[name="trauma_treatment"] span:after,
+section#medical form fieldset[name="white_treatment"] span:after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	right: 31px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/check_mark.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 15px 15px;
+	transition: all 0.3s;
+	opacity: 0;
+}
+
+section#medical form fieldset[name="root_canal"] input,
+section#medical form fieldset[name="renewal_root"] input,
+section#medical form fieldset[name="surgical_root"] input,
+section#medical form fieldset[name="trauma_treatment"] input,
+section#medical form fieldset[name="white_treatment"] input {
+	padding-right: 5px;
+	width: calc(~'(95% - 300px)');
+}
+
+section#medical form fieldset[name="root_canal"] input:checked ~span:after,
+section#medical form fieldset[name="renewal_root"] input:checked ~span:after,
+section#medical form fieldset[name="surgical_root"] input:checked ~span:after,
+section#medical form fieldset[name="trauma_treatment"] input:checked ~span:after,
+section#medical form fieldset[name="white_treatment"] input:checked ~span:after {
+	opacity: 1;
+}
+
+section#medical form textarea {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 2em;
+	padding-right: 5px;
+	width: 90%;
+}
+
+section#medical form div.controls {
+	display: block;
+	margin-top: 15px;
+	text-align: center;
+}
+
+section#medical form div.controls button {
+	display: inline-block;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 60px;
+	padding-left: 60px;
+	border: 2px solid @color_ac_asphalt;
+	background-color: @color_ac_turquise;
+	color: @color_ac_white;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+section#medical form div.controls button:hover {
 	background-color: darken(@color_ac_turquise, 10%);
 }
