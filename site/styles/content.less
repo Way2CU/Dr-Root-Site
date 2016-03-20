@@ -506,3 +506,107 @@ div#contact_form {
 	display: block;
 	text-align: center;
 }
+
+div#contact_form p {
+	font-size: 1.3em;
+}
+
+div#contact_form form {
+	display: block;
+}
+
+div#contact_form form label {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: right;
+	position: relative;
+}
+
+div#contact_form form label:before {
+	content: "";
+	position: absolute;
+	top: -8px;
+	right: 0px;
+
+	background-image: url(../images/icon-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 420px 30px;
+	width: 30px;
+	height: 30px;
+}
+
+div#contact_form form label:nth-of-type(2):before {
+	background-position: -30px 0px;
+}
+
+div#contact_form form label:nth-of-type(3):before {
+	background-position: -60px 0px;
+}
+
+div#contact_form form label:nth-of-type(4):before {
+	background-position: -360px 0px;
+}
+
+div#contact_form form label:last-of-type {
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+}
+
+div#contact_form form label span {
+	display: block;
+	padding-right: 30px;
+}
+
+div#contact_form form label input {
+	display: block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 5px;
+	width: calc(~'(220px - 5px)');
+	border: 2px solid @color_ac_grey;
+	transition: all 0.3s;
+}
+
+div#contact_form form label textarea:focus,
+div#contact_form form label input:focus,
+div#contact_form form label textarea:hover,
+div#contact_form form label input:hover {
+	border-color: @color_ac_turquise;
+}
+
+div#contact_form form label textarea {
+	padding-right: 5px;
+	width: calc(~'(100% - 5px)');
+	border: 2px solid @color_ac_grey;
+	transition: all 0.3s;
+}
+
+div#contact_form form div.controls {
+	display: block;
+	text-align: center;
+}
+
+div#contact_form form div.controls button {
+	display: inline-block;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 60px;
+	padding-left: 60px;
+	border: 2px solid @color_ac_asphalt;
+	background-color: @color_ac_turquise;
+	color: @color_ac_white;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+div#contact_form form div.controls button:hover {
+	background-color: darken(@color_ac_turquise, 10%);
+}
