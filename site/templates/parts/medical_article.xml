@@ -1,0 +1,12 @@
+<document>
+	<article>
+		<h2><cms:var param="title" multilanguage="yes"/></h2>
+		<cms:markdown param="content" multilanguage="yes"/>
+		<p><cms:text constant="text_download_form"/></p>
+		<cms:module
+				name="downloads"
+				action="show_list"
+				template="parts/downloads.xml"
+				/>
+	</article>
+</document>
