@@ -80,10 +80,17 @@ Site.on_load = function() {
 			{
 				position:mapOptions.center,
 			}
-		);
-		
+		)
+
+		var infowindow = new google.maps.InfoWindow(
+			{
+				content:"רחוב דיזינגוף 15, כניסה ב', קומה ב', נתניה"
+			}
+		);	
+
 		var map = new google.maps.Map(document.getElementById('canvas'), mapOptions);
 		marker.setMap(map);
+		infowindow.open(map,marker);
 	}
 };
 
