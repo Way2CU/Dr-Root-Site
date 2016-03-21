@@ -686,6 +686,11 @@ section#medical form input[type="text"] {
 section#medical form fieldset[name="name"] input {
 	padding-right: 5px;
 	width: calc(~'(70% - 5px)');
+	border: 1px solid @color_ac_grey;
+}
+
+section#medical form fieldset[name="name"] input:focus {
+	border: 1px solid @color_ac_turquise;
 }
 
 section#medical form fieldset[name="name"] span {
@@ -812,6 +817,15 @@ section#medical form fieldset[name="trauma_treatment"] input,
 section#medical form fieldset[name="white_treatment"] input {
 	padding-right: 5px;
 	width: calc(~'(95% - 300px)');
+	border: 1px solid @color_ac_grey;
+}
+
+section#medical form fieldset[name="root_canal"] input:focus,
+section#medical form fieldset[name="renewal_root"] input:focus,
+section#medical form fieldset[name="surgical_root"] input:focus,
+section#medical form fieldset[name="trauma_treatment"] input:focus,
+section#medical form fieldset[name="white_treatment"] input:focus {
+	border: 1px solid @color_ac_turquise;
 }
 
 section#medical form fieldset[name="root_canal"] input:checked ~span:after,
