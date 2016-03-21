@@ -42,7 +42,7 @@
 					action="show_group"
 					text_id="clinic_group"
 					template="parts/articles_group_information.xml"
-				/>
+					/>
 			</section>
 			<!-- Bottom section of the site -->
 			<cms:template file="parts/footer.xml"/>
