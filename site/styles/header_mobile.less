@@ -1,0 +1,113 @@
+/**
+ * Header Mobile Style Sheet
+ * Dr.hen segal Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+header {
+	display: block;
+}
+
+div.mobile_title {
+	background-color: @color_ac_white;
+	text-align: center;
+	position: relative;
+}
+
+div.mobile_title a.logo {
+	display: inline-block;
+	width: 200px;
+}
+
+div.mobile_title a.logo img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+div.mobile_title a.phone {
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	left: 10px;
+}
+
+div.mobile_title a.phone svg {
+	width: 30px;
+	height: 30px;
+}
+
+div.mobile_title a.menu {
+	position: absolute;
+	top: 50%;
+	margin-top: -2.5px;
+	right: 10px;
+	width: 30px;
+	height: 5px;
+	background-color: @color_ac_blue_dark;
+	transition: all 0.3s;
+}
+
+div.mobile_title.visible a.menu {
+	background-color: transparent;
+}
+
+div.mobile_title.visible a.menu:after {
+	top: 0px;
+	transform: rotate(45deg);
+}
+
+div.mobile_title.visible a.menu:before {
+	top: 0px;
+	transform: rotate(-45deg);
+}
+
+div.mobile_title a.menu:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	right: 0px;
+	width: 100%;
+	height: 5px;
+	background-color: @color_ac_blue_dark;
+	transition: all 0.3s;
+}
+
+div.mobile_title a.menu:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 100%;
+	height: 5px;
+	background-color: @color_ac_blue_dark;
+	transition: all 0.3s;
+}
+
+header nav.mobile_menu {
+	top: 63px !important;
+	right: auto;
+	left: -200px;
+	overflow-y: scroll;
+	text-align: center;
+}
+
+header nav.mobile_menu a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid @color_ac_grey;
+}
+
+header nav.mobile_menu a.active {
+	background-color: @color_ac_blue_dark;
+	color: @color_ac_white;
+}
+
+header nav.mobile_menu.visible {
+	width: 100%;
+	right: auto;
+	left: 0px;
+}
