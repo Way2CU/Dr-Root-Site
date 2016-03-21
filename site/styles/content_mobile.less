@@ -1,0 +1,857 @@
+/**
+ * Main content Mobile Style Sheet
+ * Dr.hen segal Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+section#medical,
+section#contact,
+section#instructions, 
+div#video_container, 
+section#testimonial,
+section#introduction,
+section#features,
+section#slider {
+	display: block;
+	text-align: center;
+	position: relative;
+}
+
+section#instructions {
+	padding-top: 10px;
+}
+
+section#slider {
+	min-height: 210px;
+}
+
+section#contact,
+section#treatments,
+section#about,
+section#introduction {
+	text-align: right;
+}
+
+section#testimonial {
+	text-align: center;
+	background: linear-gradient(135deg, #37d6c0 0%,#3498db 100%);
+	color: @color_ac_white;
+	overflow: hidden;
+	min-height: 225px;
+}
+
+div#contact_form,
+div#video_container,
+section#features {
+	text-align: center;
+	background-image: url(../images/crossword.png);
+	background-repeat: repeat;
+	background-position: center center;
+	background-size: 400px 400px;
+}
+
+section#slider figure {
+	display: block;
+	text-align: center;
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0;
+	transition: all 1.5s;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+section#slider figure:before {
+	content: attr(data-description);
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -150px;
+	font-size: 1.5em;
+	width: 300px;
+	font-weight: 300;
+	color: @color_ac_blue_dark;
+}
+
+section#slider figure.visible {
+	opacity: 1;
+}
+
+div.form_wrap {
+	display: block;
+	margin-right: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	background-color: @color_ac_asphalt;
+	color: @color_ac_white;
+}
+
+div.form_wrap p {
+	margin: 0px;
+	padding-bottom: 15px;
+}
+
+div.form_wrap form{
+	display: block;
+}
+
+div.form_wrap label {
+	display: block;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+div.form_wrap label:before {
+	content: "";
+	position: absolute;
+	right: 15px;
+	top: -7px;
+	background-image: url(../images/icon-sprite-white.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 422px 32px;
+	width: 32px;
+	height: 32px;
+}
+
+div.form_wrap label:nth-of-type(1):before {
+	background-position: 0px 0px;
+}
+
+div.form_wrap label:nth-of-type(2):before {
+	background-position: -32px 0px;
+}
+
+div.form_wrap label:nth-of-type(3):before {
+	background-position: -62px 0px;
+}
+
+div.form_wrap label span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.form_wrap label span {
+	display: block;
+	padding-right: 50px;
+	padding-bottom: 5px;
+	text-align: right;
+}
+
+div.form_wrap label input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	border: 1px solid @color_ac_asphalt;
+	background-color: fade(@color_ac_white,50%);
+	width: calc(~'90% - 5px');
+	transition: all 0.3s;
+}
+
+div.form_wrap label input:hover {
+	background-color: fade(@color_ac_white,80%);
+}
+
+div.form_wrap label input:focus {
+	background-color: @color_ac_white;
+}
+
+div.form_wrap div.controls {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.form_wrap div.controls button {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border: none;
+	background-color: @color_ac_turquise;
+	border: 1px solid @color_ac_asphalt;
+	font-weight: 700;
+	color: @color_ac_white;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+div.form_wrap div.controls button:hover {
+	background-color: @color_ac_turquise_dark;
+}
+
+section#features ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+section#features ul li {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 150px;
+	width: 50%;
+	position: relative;
+}
+
+section#features ul li:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -75px;
+	background-image: url(../images/features-icons-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 600px 150px;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	transition: border 0.6s, background-color 0.6s;
+	transition-delay: 0.3s, 0s;
+}
+
+section#features ul li:nth-of-type(1):before {
+	background-position: -450px 0px;
+}
+
+section#features ul li:nth-of-type(2):before {
+	background-position: -300px 0px;
+}
+
+section#features ul li:nth-of-type(3):before {
+	background-position: -150px 0px;
+}
+
+section#features ul li p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+section#introduction img,
+section#introduction article {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#introduction img {
+	width: 70%;
+}
+
+section#introduction article {
+	width: 95%;
+}
+
+section#introduction article h2 {
+	font-weight: 300;
+	color: @color_ac_blue_dark;
+}
+
+section#testimonial article {
+	position: absolute;
+	top: -100%;
+	margin-top: -100px;
+	left: 50%;
+	margin-left: -150px;
+	min-height: 200px;
+	width: 300px;
+	transition: top 0.6s, opacity 0.6s;
+	transition-delay: 0s, 0.3s;
+	opacity: 0;
+}
+
+section#testimonial article.visible {
+	opacity: 1;
+	top: 50%;
+}
+
+section#testimonial article p {
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+section#treatments article,
+div.gallery_container,
+section#about article {
+	display: block;
+	padding-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+
+div.gallery_container {
+	padding-top: 20px;
+	text-align: center;
+}
+
+div.gallery_container a {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	transition: all 0.3s;
+	opacity: 1;
+}
+
+div.gallery_container a:hover {
+	opacity: 0.7;
+}
+
+div.gallery_container a:hover img {
+	border: 2px solid @color_ac_turquise;
+}
+
+div.gallery_container a img {
+	display: block;
+	border: 2px solid transparent;
+	transition: all 0.3s;
+}
+
+section#treatments > h2,
+section#treatments article h2,
+section#about article h2 {
+	text-align: center;
+	padding-bottom: 10px;
+	font-weight: 300;
+	color: @color_ac_blue_dark;
+	border-bottom: 2px solid @color_ac_turquise;
+}
+
+section#treatments > h2,
+section#treatments > p {
+	text-align: center;
+}
+
+section#treatments > p {
+	font-size: 1.3em;
+}
+
+section#treatments article.sub h2,
+section#about article.sub h2 {
+	text-align: right;
+	border: none;
+	position: relative;
+	overflow: hidden;
+}
+
+section#treatments article.sub h2:after,
+section#about article.sub h2:after {
+	content: "";
+	position: absolute;
+	top: calc(~'(100% - 10px)');
+	width: 100%;
+	height: 1px;
+	border-bottom: 2px solid @color_ac_turquise;
+}
+
+section#treatments article.sub h2:after {
+	width: 50%;
+}
+
+section#treatments article img,
+section#about article img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+
+div#video_container div.video_wrap {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+section#instructions article {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	box-shadow: 0px 0px 5px fade(@color_ac_grey, 70%);
+}
+
+section#instructions article h2 {
+	margin: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: @color_ac_blue_dark;
+	color: @color_ac_white;
+}
+
+section#instructions article p {
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 700;
+	color: @color_ac_blue_dark;
+	border-bottom: 1px solid @color_ac_turquise;
+	width: 85%;
+}
+
+section#instructions article ul {
+	text-align: right;
+	width: 80%;
+}
+
+section#instructions article ul li {
+	padding-bottom: 10px;
+}
+
+section#instructions article ul li:last-of-type {
+	padding-bottom: 0px;
+}
+
+section#instructions article ul li strong {
+	display: block;
+}
+
+section#contact div#canvas,
+section#contact div.information {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	width: 95%;
+}
+
+section#contact div#canvas {
+	border: 2px solid @color_ac_grey;
+	height: 300px;
+}
+
+section#contact div.information h2 {
+	color: @color_ac_blue_dark;
+	text-align: center;
+}
+
+section#contact div.information ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+section#contact div.information ul li {
+	padding-bottom: 20px;
+}
+
+section#contact div.information ul li:last-of-type {
+	padding-bottom: 0px;
+}
+
+section#contact div.information ul li svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 5px;
+	width: 25px;
+	height: 25px;
+}
+
+section#contact div.information ul li strong {
+	display: inline-block;
+}
+
+section#contact div.information ul li a {
+	text-decoration: none;
+	color: @color_text;
+	transition: all 0.3s;
+}
+
+section#contact div.information ul li a:hover {
+	color: @color_ac_turquise;
+}
+
+section#contact div.information ul li a.phone {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+div#contact_form {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	text-align: center;
+}
+
+div#contact_form p {
+	font-size: 1.3em;
+}
+
+div#contact_form form {
+	display: block;
+}
+
+div#contact_form form label {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 95%;
+	text-align: right;
+	position: relative;
+}
+
+div#contact_form form label:before {
+	content: "";
+	position: absolute;
+	top: -8px;
+	right: 0px;
+
+	background-image: url(../images/icon-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 420px 30px;
+	width: 30px;
+	height: 30px;
+}
+
+div#contact_form form label:nth-of-type(2):before {
+	background-position: -30px 0px;
+}
+
+div#contact_form form label:nth-of-type(3):before {
+	background-position: -60px 0px;
+}
+
+div#contact_form form label:nth-of-type(4):before {
+	background-position: -360px 0px;
+}
+
+div#contact_form form label:last-of-type {
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#contact_form form label span {
+	display: block;
+	padding-right: 30px;
+}
+
+div#contact_form form label input {
+	display: block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 5px;
+	width: calc(~'(100% - 5px)');
+	border: 2px solid @color_ac_grey;
+	transition: all 0.3s;
+}
+
+div#contact_form form label textarea:focus,
+div#contact_form form label input:focus,
+div#contact_form form label textarea:hover,
+div#contact_form form label input:hover {
+	border-color: @color_ac_turquise;
+}
+
+div#contact_form form label textarea {
+	padding-right: 5px;
+	width: calc(~'(100% - 5px)');
+	border: 2px solid @color_ac_grey;
+	transition: all 0.3s;
+}
+
+div#contact_form form div.controls {
+	display: block;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+div#contact_form form div.controls button {
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 40px;
+	padding-left: 40px;
+	border: 2px solid @color_ac_asphalt;
+	background-color: @color_ac_turquise;
+	color: @color_ac_white;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+div#contact_form form div.controls button:hover {
+	background-color: darken(@color_ac_turquise, 10%);
+}
+
+section#medical article,
+section#medical form {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+
+section#medical article {
+	text-align: right;
+}
+
+section#medical article h2 {
+	text-align: center;
+	margin-top: 0px;
+	color: @color_ac_blue_dark;
+	font-weight: 300;
+}
+
+section#medical article a {
+	display: block;
+	text-align: center;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-bottom: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
+	text-decoration: none;
+	border: 2px solid @color_ac_asphalt;
+	background-color: @color_ac_turquise;
+	color: @color_ac_white;
+	font-weight: 700;
+	transition: all 0.3s;
+}
+
+section#medical article a:hover {
+	background-color: darken(@color_ac_turquise, 10%);
+}
+
+section#medical form {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: right;
+	background-color: lighten(@color_ac_grey, 20%);
+	box-shadow: 0px 0px 5px fade(@color_ac_grey, 80%);
+}
+
+section#medical form fieldset {
+	display: block;
+	margin: 0px;
+	margin-bottom: 15px;
+	padding: 0px;
+	border: none;
+}
+
+section#medical form span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: 700;
+}
+
+section#medical form input[type="checkbox"] {
+	display: none;
+}
+
+section#medical form input[type="text"] {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+section#medical form fieldset[name="name"] label {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+
+section#medical form fieldset[name="name"] input {
+	padding-right: 5px;
+	width: calc(~'(100% - 5px)');
+	border: 1px solid @color_ac_grey;
+}
+
+section#medical form fieldset[name="name"] input:focus {
+	border: 1px solid @color_ac_turquise;
+}
+
+section#medical form fieldset[name="toothes"] {
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#medical form fieldset[name="toothes"] legend {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+	width: 95%;
+	font-weight: 700;
+}
+
+section#medical form fieldset[name="toothes"] label {
+	display: inline-block;
+}
+
+section#medical form fieldset[name="toothes"] span {
+	padding-left: 7px;
+	padding-right: 7px;
+	width: auto;
+	font-weight: 400;
+	position: relative;
+}
+
+section#medical form fieldset[name="toothes"] input:checked ~span:before {
+	opacity: 1;
+}
+
+section#medical form fieldset[name="toothes"] span:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -13.5px;
+	left: 50%;
+	margin-left: -13.5px;
+	width: 25px;
+	height: 25px;
+	border: 1px solid @color_ac_blue_dark;
+	border-radius: 50%;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+section#medical form fieldset[name="name"],
+section#medical form fieldset[name="root_canal"],
+section#medical form fieldset[name="renewal_root"],
+section#medical form fieldset[name="surgical_root"],
+section#medical form fieldset[name="trauma_treatment"],
+section#medical form fieldset[name="white_treatment"] {
+	text-align: right;
+}
+
+section#medical form fieldset[name="root_canal"] span,
+section#medical form fieldset[name="renewal_root"] span,
+section#medical form fieldset[name="surgical_root"] span,
+section#medical form fieldset[name="trauma_treatment"] span,
+section#medical form fieldset[name="white_treatment"]  span{
+	text-align: right;
+	padding-bottom: 10px;
+	width: calc(~'(100% - 30px)');
+	font-weight: 700;
+	position: relative;
+}
+
+section#medical form fieldset[name="root_canal"] span:before,
+section#medical form fieldset[name="renewal_root"] span:before,
+section#medical form fieldset[name="surgical_root"] span:before,
+section#medical form fieldset[name="trauma_treatment"] span:before,
+section#medical form fieldset[name="white_treatment"]  span:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 1px solid @color_ac_grey;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+section#medical form fieldset[name="root_canal"] span:after,
+section#medical form fieldset[name="renewal_root"] span:after,
+section#medical form fieldset[name="surgical_root"] span:after,
+section#medical form fieldset[name="trauma_treatment"] span:after,
+section#medical form fieldset[name="white_treatment"] span:after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	right: 1px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/check_mark.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 15px 15px;
+	transition: all 0.3s;
+	opacity: 0;
+}
+
+section#medical form fieldset[name="root_canal"] input[type="text"],
+section#medical form fieldset[name="renewal_root"] input[type="text"],
+section#medical form fieldset[name="surgical_root"] input[type="text"],
+section#medical form fieldset[name="trauma_treatment"] input[type="text"],
+section#medical form fieldset[name="white_treatment"] input[type="text"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 5px;
+	width: calc(~'(95% - 5px)');
+	border: 1px solid @color_ac_grey;
+}
+
+section#medical form fieldset[name="root_canal"] input:focus,
+section#medical form fieldset[name="renewal_root"] input:focus,
+section#medical form fieldset[name="surgical_root"] input:focus,
+section#medical form fieldset[name="trauma_treatment"] input:focus,
+section#medical form fieldset[name="white_treatment"] input:focus {
+	border: 1px solid @color_ac_turquise;
+}
+
+section#medical form fieldset[name="root_canal"] input:checked ~span:after,
+section#medical form fieldset[name="renewal_root"] input:checked ~span:after,
+section#medical form fieldset[name="surgical_root"] input:checked ~span:after,
+section#medical form fieldset[name="trauma_treatment"] input:checked ~span:after,
+section#medical form fieldset[name="white_treatment"] input:checked ~span:after {
+	opacity: 1;
+}
+
+section#medical form textarea {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 2em;
+	padding-right: 5px;
+	width: 90%;
+}
+
+section#medical form div.controls {
+	display: block;
+	margin-top: 15px;
+	text-align: center;
+}
+
+section#medical form div.controls button {
+	display: inline-block;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 60px;
+	padding-left: 60px;
+	border: 2px solid @color_ac_asphalt;
+	background-color: @color_ac_turquise;
+	color: @color_ac_white;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+section#medical form div.controls button:hover {
+	background-color: darken(@color_ac_turquise, 10%);
+}
