@@ -23,13 +23,34 @@
 				<cms:template file="parts/header_mobile.xml"/>
 			</cms:mobile>
 
-			<section id="slider">
-				<cms:module
-					name="gallery"
-					action="show_image_list"
-					group="home_page_slider"
-					template="parts/slider.xml"
-					/>
+			<cms:desktop>
+				<section id="slider">
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="home_page_slider"
+						template="parts/slider.xml"
+						/>
+						<div class="form_wrap">
+							<p><cms:text constant="title_form"/></p>
+							<cms:module
+									name="contact_form"
+									action="show"
+									text_id="contact"
+									/>
+						</div>
+				</section>
+			</cms:desktop>
+
+			<cms:mobile>
+				<section id="slider">
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="home_page_mobile_slider"
+						template="parts/slider.xml"
+						/>
+				</section>
 				<div class="form_wrap">
 					<p><cms:text constant="title_form"/></p>
 					<cms:module
@@ -38,10 +59,12 @@
 							text_id="contact"
 							/>
 				</div>
-			</section>
+			</cms:mobile>
 
 			<section id="introduction">
-				<img src="_BASEURL.'/site/images/hen.jpg'"  alt="hen_segal" cms:eval="src"/>
+				<cms:desktop>
+					<img src="_BASEURL.'/site/images/hen.jpg'"  alt="hen_segal" cms:eval="src"/>
+				</cms:desktop>
 
 				<article>
 					<cms:module
@@ -51,6 +74,10 @@
 						template="parts/article.xml"
 						/>
 				</article>
+
+				<cms:mobile>
+					<img src="_BASEURL.'/site/images/hen.jpg'"  alt="hen_segal" cms:eval="src"/>
+				</cms:mobile>
 			</section>
 
 			<section id="features">
