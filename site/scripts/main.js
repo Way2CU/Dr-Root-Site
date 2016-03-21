@@ -94,6 +94,5 @@ Site.on_load = function() {
 	}
 };
 
-
 // connect document `load` event with handler function
 $(Site.on_load);
