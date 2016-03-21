@@ -11,6 +11,8 @@
 	<module name="gallery" order="6" preload="no"/>
 	<module name="articles" order="7" preload="no"/>
 	<module name="youtube" order="8" preload="no"/>
+	<module name="mandrill" order="9" preload="no"/>
+	<module name="downloads" order="10" preload="no"/>
 	
 	<user 
 		fullname="Administrator" 
