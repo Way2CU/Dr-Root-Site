@@ -61,9 +61,8 @@ Site.on_load = function() {
 	// create function for rotating between testimonials
 	Site.testimonials = new PageControl('section#testimonial', 'article');
 	Site.testimonials
-		.setInterval(8000)
-		.setWrapAround(true)
-		.setAutoResize(true);
+		.setInterval(10000)
+		.setWrapAround(true);
 
 	// create lightbox function for about us page gallery
 	Site.lightbox = new LightBox('div.gallery_container a', false, false, true);
