@@ -1,9 +1,21 @@
 <document>
-	<a href="$params['image']" cms:eval="href">
-		<img 
-			src="gallery::getThumbnailById($params['id'], null, 250, Thumbnail::CONSTRAIN_HEIGHT)" 
-			alt="$params['title'][$language]"
-			cms:eval="src,alt"
-			/>
-	</a>
+	<cms:desktop>
+		<a href="$params['image']" cms:eval="href">
+			<img 
+				src="gallery::getThumbnailById($params['id'], null, 250, Thumbnail::CONSTRAIN_HEIGHT)" 
+				alt="$params['title'][$language]"
+				cms:eval="src,alt"
+				/>
+		</a>
+	</cms:desktop>
+
+	<cms:mobile>
+		<a href="$params['image']" cms:eval="href">
+			<img 
+				src="gallery::getThumbnailById($params['id'], null, 150, Thumbnail::CONSTRAIN_HEIGHT)" 
+				alt="$params['title'][$language]"
+				cms:eval="src,alt"
+				/>
+		</a>
+	</cms:mobile>
 </document>
