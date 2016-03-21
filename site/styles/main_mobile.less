@@ -1,0 +1,65 @@
+/**
+ * Main Mobile Style Sheet
+ * Dr.Hen Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors: Tal Reznic
+ */
+
+@font-face {
+	font-family: 'Open Sans Hebrew';
+	font-style: light;
+	font-weight: 400;
+	src: url(../images/fonts/OpenSansHebrew-Light.ttf) format('ttf');
+} 
+
+@font-face {
+	font-family: 'Open Sans Hebrew';
+	font-style: regular;
+	font-weight: 400;
+	src: url(../images/fonts/opensanshebrew-regular-webfont.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Open Sans Hebrew';
+	font-style: bold;
+	font-weight: 700;
+	src: url(../images/fonts/opensanshebrew-bold-webfont.woff) format('woff');
+}
+
+@color_ac_white: white;
+@color_ac_black: black;
+@color_ac_grey: #bdc3c7;
+@color_ac_turquise: #37d6c0;
+@color_ac_turquise_dark: #1abc9c;
+@color_ac_blue: #3498db;
+@color_ac_blue_dark: #004366;
+@color_ac_asphalt: #2c3e50;
+@color_text: #4d4d4d;
+
+@import "header_mobile.less";
+@import (css) "stock/header.css";
+@import (css) "stock/copyright.css";
+
+body {
+	background-color: @color_ac_white;
+	color: @color_text;
+	font-family: 'Open Sans Hebrew', sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+	font-family: 'Open Sans Hebrew';
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Open Sans Hebrew';
+	font-weight: 700;
+}
