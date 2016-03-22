@@ -877,3 +877,64 @@ section#medical form div.controls button {
 section#medical form div.controls button:hover {
 	background-color: darken(@color_ac_turquise, 10%);
 }
+
+// Tablet version
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+header div.top_header {
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+header nav {
+	width: auto;
+}
+
+section#slider figure:before {
+	margin-left: -170px;
+}
+
+section#testimonial article {
+	width: 800px;
+	margin-left: -400px;
+}
+
+section#contact,
+section#treatments article,
+div.gallery_container,
+section#about article,
+section#treatments article:nth-of-type(even),
+section#about article:nth-of-type(odd),
+div#video_container,
+section#features {
+	padding: 20px calc(~'(100vw - 960px)'/ 2);
+}
+
+section#treatments > h2,
+section#treatments > p {
+	width: auto;
+}
+
+section#instructions article {
+	width: 400px;
+}
+
+section#medical article,
+section#medical form {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+section#medical article {
+	margin-bottom: 20px;
+}
+
+section#contact div.information h2 {
+	width: 80%;
+}
+
+}
