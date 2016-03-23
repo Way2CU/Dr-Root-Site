@@ -9,6 +9,13 @@
 				<cms:raw text=" - "/>
 				<cms:text constant="menu_contact"/>
 			</title>
+			<meta property="og:title" content=" יצירת קשר- מומחה לטיפולי שורש נתניה | דר חן סגל"/>
+			<meta property="og:type" content="website"/>
+			<meta property="og:url" content="http://www.drhs.co.il/contact"/>
+			<meta property="og:image" content="_BASEURL.'/site/images/facebook_hen.jpg'" cms:eval="content"/>
+			<meta property="og:site_name" content="מומחה לטיפולי שורש נתניה | דר חן סגל"/>
+			<meta property="fb:admins" content="hensegal"/>
+			<meta property="og:description" content="יצירת קשר דר חן סגל מומחה לטיפולי שורש"/> 
 			<cms:collection include="page_control"/>
 			<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBU0ChS-vJEr6NMxtg2FXUK-hPHzaGYAPI"></script>
 			<cms:module name="head_tag" action="print_tag"/>

@@ -15,6 +15,13 @@
 				action="set_description" 
 				article="treatment_article"
 				/>
+			<meta property="og:title" content=" טיפולים - מומחה לטיפולי שורש נתניה | דר חן סגל"/>
+			<meta property="og:type" content="website"/>
+			<meta property="og:url" content="http://www.drhs.co.il/treatments"/>
+			<meta property="og:image" content="_BASEURL.'/site/images/facebook_hen.jpg'" cms:eval="content"/>
+			<meta property="og:site_name" content="מומחה לטיפולי שורש נתניה | דר חן סגל"/>
+			<meta property="fb:admins" content="hensegal"/>
+			<meta property="og:description" content="שורש השן הוא הבסיס המחזיק את השן בלסת. השורש מכיל רקמת מוך הכוללת כלי דם ועצבים המזינים את השן. פגיעה במוך השן יכולה להתרחש מעששת או חבלה בשן."/> 
 			<cms:collection include="page_control,animation_chain"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
