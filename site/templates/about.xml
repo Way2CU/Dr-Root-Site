@@ -53,14 +53,14 @@
 				</div>
 
 				<div id="video_container">
-					<cms:module
-						name="youtube"
-						action="show_list"
-						group_text_id="videos"
-						template="parts/video_list.xml"
+					<iframe 
+						src="https://player.vimeo.com/video/56850648" 
+						width="550" 
+						height="366" 
+						frameborder="0" 
 						/>
 				</div>
-
+				
 				<cms:module
 					name="articles"
 					action="show_list"
