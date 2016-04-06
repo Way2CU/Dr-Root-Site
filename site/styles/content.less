@@ -43,7 +43,7 @@ section#testimonial {
 	background: linear-gradient(135deg, #37d6c0 0%,#3498db 100%);
 	color: @color_ac_white;
 	overflow: hidden;
-	min-height: 450px;
+	min-height: 250px;
 }
 
 section#treatments article:nth-of-type(even),
@@ -199,7 +199,7 @@ section#slider div.form_wrap div.controls button {
 	padding-left: 70px;
 	padding-right: 70px;
 	border: none;
-	background-color: @color_ac_turquise;
+	background-color: @color_ac_turquise_dark;
 	border: 1px solid @color_ac_asphalt;
 	font-weight: 700;
 	color: @color_ac_white;
@@ -208,7 +208,7 @@ section#slider div.form_wrap div.controls button {
 }
 
 section#slider div.form_wrap div.controls button:hover {
-	background-color: @color_ac_turquise_dark;
+	background-color: @color_ac_turquise;
 }
 
 section#features ul {
@@ -227,7 +227,6 @@ section#features ul li {
 
 section#features ul li:hover:before {
 	border: 3px solid @color_ac_turquise;
-	background-color: fade(@color_ac_grey, 60%);
 }
 
 section#features ul li:before {
@@ -244,8 +243,7 @@ section#features ul li:before {
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
-	transition: border 0.6s, background-color 0.6s;
-	transition-delay: 0.3s, 0s;
+	transition: all 0.3s;
 }
 
 section#features ul li:nth-of-type(1):before {
@@ -264,6 +262,7 @@ section#features ul li p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 1.2em;
 	width: 60%;
 }
 
@@ -287,10 +286,10 @@ section#introduction article h2 {
 section#testimonial article {
 	position: absolute;
 	top: -100%;
-	margin-top: -200px;
+	margin-top: -125px;
 	left: 50%;
 	margin-left: -500px;
-	height: 400px;
+	height: 250px;
 	width: 1000px;
 	transition: top 0.6s, opacity 0.6s;
 	transition-delay: 0s, 0.3s;
@@ -303,7 +302,7 @@ section#testimonial article.visible {
 }
 
 section#testimonial article p {
-	font-size: 1.7em;
+	font-size: 1.2em;
 	font-style: italic;
 }
 
@@ -528,8 +527,8 @@ div#contact_form form {
 div#contact_form form label {
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
 	text-align: right;
 	position: relative;
 }
@@ -537,7 +536,7 @@ div#contact_form form label {
 div#contact_form form label:before {
 	content: "";
 	position: absolute;
-	top: -8px;
+	top: 5px;
 	right: 0px;
 
 	background-image: url(../images/icon-sprite.svg);
@@ -557,6 +556,7 @@ div#contact_form form label:nth-of-type(3):before {
 }
 
 div#contact_form form label:nth-of-type(4):before {
+	top: -5px;
 	background-position: -360px 0px;
 }
 
@@ -569,12 +569,14 @@ div#contact_form form label:last-of-type {
 }
 
 div#contact_form form label span {
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 5px;
 	padding-right: 30px;
 }
 
 div#contact_form form label input {
-	display: block;
+	display: inline-block;
 	padding-top: 7px;
 	padding-bottom: 7px;
 	padding-right: 5px;
@@ -610,7 +612,7 @@ div#contact_form form div.controls button {
 	padding-right: 60px;
 	padding-left: 60px;
 	border: 2px solid @color_ac_asphalt;
-	background-color: @color_ac_turquise;
+	background-color: @color_ac_turquise_dark;
 	color: @color_ac_white;
 	font-weight: 700;
 	cursor: pointer;
@@ -618,7 +620,7 @@ div#contact_form form div.controls button {
 }
 
 div#contact_form form div.controls button:hover {
-	background-color: darken(@color_ac_turquise, 10%);
+	background-color: @color_ac_turquise;
 }
 
 section#medical article,
@@ -646,14 +648,14 @@ section#medical article a {
 	padding-left: 30px;
 	text-decoration: none;
 	border: 2px solid @color_ac_asphalt;
-	background-color: @color_ac_turquise;
+	background-color: @color_ac_turquise_dark;
 	color: @color_ac_white;
 	font-weight: 700;
 	transition: all 0.3s;
 }
 
 section#medical article a:hover {
-	background-color: darken(@color_ac_turquise, 10%);
+	background-color: @color_ac_turquise;
 }
 
 section#medical form {
@@ -867,7 +869,7 @@ section#medical form div.controls button {
 	padding-right: 60px;
 	padding-left: 60px;
 	border: 2px solid @color_ac_asphalt;
-	background-color: @color_ac_turquise;
+	background-color: @color_ac_turquise_dark;
 	color: @color_ac_white;
 	font-weight: 700;
 	cursor: pointer;
@@ -875,7 +877,7 @@ section#medical form div.controls button {
 }
 
 section#medical form div.controls button:hover {
-	background-color: darken(@color_ac_turquise, 10%);
+	background-color: @color_ac_turquise;
 }
 
 // Tablet version
