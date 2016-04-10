@@ -726,6 +726,15 @@ section#medical form fieldset[name="toothes"] label {
 	display: inline-block;
 }
 
+section#medical form fieldset[name="toothes"] label:hover {
+	cursor: pointer;
+}
+
+section#medical form fieldset[name="toothes"] label:hover span:before {
+	opacity: 1;
+	border-color: @color_ac_turquise;
+}
+
 section#medical form fieldset[name="toothes"] label:nth-child(25),
 section#medical form fieldset[name="toothes"] label:nth-child(9) {
 	border-left: 1px solid @color_ac_turquise;
