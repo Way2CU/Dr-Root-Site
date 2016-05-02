@@ -53,12 +53,23 @@
 				</div>
 
 				<div id="video_container">
-					<iframe 
-						src="https://player.vimeo.com/video/56850648" 
-						width="550" 
-						height="366" 
-						frameborder="0" 
-						/>
+					<cms:desktop>
+						<iframe 
+							src="https://player.vimeo.com/video/56850648" 
+							width="550" 
+							height="366" 
+							frameborder="0" 
+							/>
+					</cms:desktop>
+
+					<cms:mobile>
+						<iframe 
+							src="https://player.vimeo.com/video/56850648" 
+							width="320" 
+							height="215" 
+							frameborder="0" 
+							/>
+					</cms:mobile>
 				</div>
 				
 				<cms:module
